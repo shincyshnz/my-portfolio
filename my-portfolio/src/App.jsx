@@ -4,7 +4,9 @@ import "./app.scss"
 const App = () => {
   return (
     <div>
-      <Hero />
+      <section id='homepage'>
+        <Hero />
+      </section>
       <Parallax />
       <Services />
       <Parallax />

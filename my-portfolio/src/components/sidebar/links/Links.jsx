@@ -4,7 +4,7 @@ const Links = () => {
   return (
     <div className="links">
       {SIDEBAR_LINKS.map((item, index) => (
-        <a href={`#${item.link}`} key={index}>{item.text}</a>
+        <a href={`${item.link}`} key={index}>{item.text}</a>
       ))}
     </div>
   )

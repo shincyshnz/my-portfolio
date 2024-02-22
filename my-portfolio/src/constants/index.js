@@ -15,3 +15,28 @@ export const SOCIAL_LINKS = [
         alt: 'Gmail'
     }
 ]
+
+
+export const SIDEBAR_LINKS = [
+    {
+        link: '#homepage',
+        text: 'Homepage'
+    },
+    {
+        link: '#services',
+        text: 'Services'
+    },
+    {
+        link: '#portfolio',
+        text: 'Portfolio'
+    },
+    {
+        link: '#contact',
+        text: 'Contact'
+    },
+    {
+        link: '#about',
+        text: 'About'
+    },
+
+] 

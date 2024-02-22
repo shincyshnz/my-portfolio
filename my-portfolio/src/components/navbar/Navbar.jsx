@@ -40,9 +40,15 @@ const Navbar = () => {
           animate="visible"
           variants={variants}>
           {SOCIAL_LINKS.map((item, i) => (
-            <motion.li key={i} variants={variants}
+            <motion.li key={i}
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.95 }}
+              variants={variants}
             >
-              <a href={item.url}><img src={item.img} alt={item.alt} /></a>
+              <a
+                href={item.url}>
+                <img src={item.img} alt={item.alt} />
+              </a>
             </motion.li>
 
           ))}

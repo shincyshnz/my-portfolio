@@ -1,0 +1,7 @@
+export {default as Hero} from "./Hero"
+export {default as Contact} from "./Contact"
+export {default as Parallax} from "./Parallax"
+export {default as Project1} from "./Project1"
+export {default as Project2} from "./Project2"
+export {default as Project3} from "./Project3"
+export {default as Services} from "../components/Services"

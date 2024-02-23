@@ -4,37 +4,46 @@ import { SIDEBAR_LINKS } from "../../../constants"
 const Links = () => {
   const variants = {
     open: {
-      y: 0,
-      opacity: 1,
       transition: {
-        y: { stiffness: 1000, velocity: -100 }
+        staggerChildren: 0.1,
       }
     },
     closed: {
-      y: 50,
-      opacity: 0,
       transition: {
-        y: { stiffness: 1000 }
+        staggerChildren: 0.05,
+        staggerDirection: -1,
       }
     }
   }
 
-  return (
-    <div 
+  const itemVariants = {
+    open: {
+      y: 0,
+      opacity: 1,
+    },
+    closed: {
+      y: 50,
+      opacity: 0,
+    }
+  }
+
+return (
+  <motion.div
+    variants={variants}
     className="links"
-    >
-      {SIDEBAR_LINKS.map((item, index) => (
-        <motion.a
-          variants={variants}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-          href={`${item.link}`}
-          key={index}>
-          {item.text}
-        </motion.a>
-      ))}
-    </div>
-  )
+  >
+    {SIDEBAR_LINKS.map((item, index) => (
+      <motion.a
+        variants={itemVariants}
+        whileHover={{scale :1.1}}
+        whileTap={{scale :0.95}}
+        href={`${item.link}`}
+        key={index}>
+        {item.text}
+      </motion.a>
+    ))}
+  </motion.div>
+)
 }
 
 export default Links

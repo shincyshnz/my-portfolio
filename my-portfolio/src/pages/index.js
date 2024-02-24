@@ -1,4 +1,4 @@
-export {default as Hero} from "./Hero"
+export {default as Hero} from "./hero/Hero"
 export {default as Contact} from "./Contact"
 export {default as Parallax} from "./Parallax"
 export {default as Project1} from "./Project1"

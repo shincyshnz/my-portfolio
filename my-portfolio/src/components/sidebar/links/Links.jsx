@@ -3,7 +3,7 @@ import { SIDEBAR_LINKS } from "../../../constants"
 import { useEffect, useState } from 'react'
 
 const Links = () => {
-  const [selected, setSelected] = useState('list--0');
+  const [selected, setSelected] = useState('');
 
   const variants = {
     open: {
@@ -43,7 +43,7 @@ const Links = () => {
         <motion.a
           onClick={handleClick}
           className={`list--${index}`}
-          animate={{ color : `${selected === `list--${index}` ? "#444e5e" : "#000000"}`,}}
+          animate={{ color: `${selected === `list--${index}` ? "#444e5e" : "#000000"}`, }}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}

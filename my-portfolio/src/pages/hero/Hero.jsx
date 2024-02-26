@@ -65,7 +65,7 @@ const Hero = () => {
           animate="animate"
         >
           <motion.h2 variants={textVariants}>Shincy KM</motion.h2>
-          <motion.h1 variants={textVariants}>Web Developer</motion.h1>
+          <motion.h1 variants={textVariants}>Front End Developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>See the latest works</motion.button>
             <motion.button variants={textVariants}>Contact me</motion.button>
@@ -81,7 +81,7 @@ const Hero = () => {
           variants={sliderVariants}
           initial="initial"
           animate="animate">
-          React Express MongoDb Html Sass Nodejs Redux Tailwind
+          React Express MongoDb Html Scss Nodejs Redux Tailwind
         </motion.div>
 
         {/* Image container */}

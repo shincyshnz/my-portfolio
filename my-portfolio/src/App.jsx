@@ -1,5 +1,5 @@
 import Navbar from './components/navbar/Navbar'
-import { Contact, Hero, Parallax, Project1, Project2, Project3, Services } from "./pages";
+import { Contact, Education, Hero, Parallax, Project1, Project2, Project3 } from "./pages";
 import "./app.scss"
 
 const App = () => {
@@ -9,19 +9,20 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id='services'>
-        <Parallax type="services" />
+      <section id='experience'>
+        <Parallax type="experience" />
       </section>
-      <Services />
-      <section id='portfolio'>
-        <Parallax type="portfolio" />
+
+      <section id='education'>
+        <Parallax type="education" />
       </section>
-      <Services />
+      <section><Education /></section>
+
       <Project1 />
       <Project2 />
       <Project3 />
       <Contact />
-    </div>
+    </div >
 
   )
 };

@@ -31,19 +31,6 @@
             background-color: inherit;
             width: 50%;
 
-            &:after {
-                content: '';
-                position: absolute;
-                width: 25px;
-                height: 25px;
-                right: -17px;
-                background-color: white;
-                border: 4px solid #FF9F55;
-                top: 15px;
-                border-radius: 50%;
-                z-index: 1;
-            }
-
             .content {
                 padding: 20px 30px;
                 background-color: rgb(106, 103, 147);
@@ -54,6 +41,24 @@
                     margin-block: 10px;
                     font-weight: lighter;
                 }
+            }
+
+            svg {
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background-color: white;
+                border: 4px solid #FF9F55;
+                border-radius: 50%;
+                z-index: 1;
+                transform: rotate(-90deg);
+
+                circle {
+                    stroke-dashoffset: 0;
+                    stroke-width: 15%;
+                    fill: none;
+                  }
             }
         }
 
@@ -72,6 +77,11 @@
                 border: medium solid white;
                 border-width: 10px 0 10px 10px;
                 border-color: transparent transparent transparent white;
+            }
+
+            svg {
+                right: -52px;
+                top: 15px;
             }
         }
 
@@ -93,6 +103,11 @@
 
             &:after {
                 left: -16px;
+            }
+
+            svg {
+                left: -53px;
+                top: 15px;
             }
         }
     }

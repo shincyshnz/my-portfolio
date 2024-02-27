@@ -4,8 +4,6 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 
 
 const Education = () => {
-  const ref = useRef(null);
-
   const lineAnimation = {
     initial: { height: 0, opacity: 0 },
     animate: {
@@ -27,8 +25,14 @@ const Education = () => {
       opacity: 1,
       transition: {
         duration: 1,
+        staggerChildren: 0.5,
       }
     }
+  }
+
+  const hoverEffect = {
+    backgroundColor: "white",
+    color: "black",
   }
 
   return (
@@ -37,20 +41,22 @@ const Education = () => {
       <motion.div
         variants={lineAnimation}
         initial="initial"
-        animate="animate"
+        // animate="animate"
+        whileInView="animate"
         className="timeline"
-        ref={ref}
       >
         <div className="container left">
           <motion.div
             variants={contentAnimation}
             className="content"
             initial="initial"
-            animate="animate"
+            whileInView="animate"
+            whileHover={hoverEffect}
+            style={{}}
           >
             <motion.h2
               variants={contentAnimation}
-            >M.tech in Computer Science & Engg
+            >M.Tech in Computer Science & Engg
             </motion.h2>
             <motion.h5
               variants={contentAnimation}
@@ -62,12 +68,13 @@ const Education = () => {
             </motion.p>
 
             {/* <!-- SVG for left container --> */}
-            <svg id="progress" width="100" height="100" viewBox="0 0 100 100">
+            <motion.svg id="progress" width="100" height="100" viewBox="0 0 100 100">
               <circle
                 cx="50"
                 cy="50"
                 r="30"
-                pathLength="1" className="bg" />
+                pathLength="1" className="bg"
+              />
               <motion.circle
                 cx="50"
                 cy="50"
@@ -75,7 +82,7 @@ const Education = () => {
                 pathLength="1"
                 className="indicator"
               />
-            </svg>
+            </motion.svg>
 
           </motion.div>
         </div>
@@ -84,10 +91,12 @@ const Education = () => {
             variants={contentAnimation}
             className="content"
             initial="initial"
-            animate="animate">
+            whileInView="animate"
+            whileHover={hoverEffect}
+          >
             <motion.h2
               variants={contentAnimation}
-            >B.tech in Computer Science & Engg
+            >B.Tech in Computer Science & Engg
             </motion.h2>
             <motion.h5
               variants={contentAnimation}

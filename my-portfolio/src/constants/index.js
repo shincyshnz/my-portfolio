@@ -46,7 +46,7 @@ export const PROJECTS = [
         id: 1,
         title: "TMDB Movie Catalogue App",
         img: "/project1.png",
-        description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to add, delete and update movie data including title, poster image, rating and genre. Users can view movies list in TMDB-Mobvie App and they can add the movies to watch later. Pagination helps to restrict the number of movies listed in the page. Users can filter movies based on genres and rating.",
+        description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to handle movie data. Users can view movies list in TMDB-Mobvie App. Users can filter movies based on genres and rating.",
         demo : "https://movie-cms-moies-app.onrender.com/",
         gitHub : "https://github.com/shincyshnz/movie-cms" 
     },
@@ -54,7 +54,7 @@ export const PROJECTS = [
         id: 2,
         title: "TMDB Movie Catalogue App",
         img: "/project1.png",
-        description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to add, delete and update movie data including title, poster image, rating and genre. Users can view movies list in TMDB-Mobvie App and they can add the movies to watch later. Pagination helps to restrict the number of movies listed in the page. Users can filter movies based on genres and rating.",
+        description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to handle movie data. Users can view movies list in TMDB-Mobvie App. Users can filter movies based on genres and rating.",
         demo : "https://movie-cms-moies-app.onrender.com/",
         gitHub : "https://github.com/shincyshnz/movie-cms" 
     },
@@ -62,15 +62,7 @@ export const PROJECTS = [
         id: 3,
         title: "TMDB Movie Catalogue App",
         img: "/project1.png",
-        description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to add, delete and update movie data including title, poster image, rating and genre. Users can view movies list in TMDB-Mobvie App and they can add the movies to watch later. Pagination helps to restrict the number of movies listed in the page. Users can filter movies based on genres and rating.",
-        demo : "https://movie-cms-moies-app.onrender.com/",
-        gitHub : "https://github.com/shincyshnz/movie-cms" 
-    },
-    {
-        id: 4,
-        title: "TMDB Movie Catalogue App",
-        img: "/project1.png",
-        description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to add, delete and update movie data including title, poster image, rating and genre. Users can view movies list in TMDB-Mobvie App and they can add the movies to watch later. Pagination helps to restrict the number of movies listed in the page. Users can filter movies based on genres and rating.",
+        description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to handle movie data. Users can view movies list in TMDB-Mobvie App. Users can filter movies based on genres and rating.",
         demo : "https://movie-cms-moies-app.onrender.com/",
         gitHub : "https://github.com/shincyshnz/movie-cms" 
     },

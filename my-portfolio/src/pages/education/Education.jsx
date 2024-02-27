@@ -5,10 +5,6 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 
 const Education = () => {
   const ref = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"]
-  })
 
   const lineAnimation = {
     initial: { height: 0, opacity: 0 },
@@ -37,6 +33,7 @@ const Education = () => {
 
   return (
     <div className="timelineContainer">
+
       <motion.div
         variants={lineAnimation}
         initial="initial"
@@ -110,7 +107,6 @@ const Education = () => {
                 r="30"
                 pathLength="1"
                 className="indicator"
-                style={{ pathLength: scrollYProgress }}
               />
             </svg>
 

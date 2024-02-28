@@ -25,6 +25,19 @@
 
     .formContainer {
         flex: 1;
+        position: relative;
+
+        .phoneSvg {
+            stroke: orange;
+            position: absolute;
+            inset: 0;
+            margin: auto;
+
+            svg{
+                object-fit: contain;
+                width: 350px;
+            }
+        }
 
         form {
             display: flex;

@@ -23,6 +23,14 @@ export const SIDEBAR_LINKS = [
         text: 'Homepage'
     },
     {
+        link: '#about',
+        text: 'About'
+    },
+    {
+        link: '#experience',
+        text: 'Experience'
+    },
+    {
         link: '#education',
         text: 'Education'
     },
@@ -33,10 +41,6 @@ export const SIDEBAR_LINKS = [
     {
         link: '#contact',
         text: 'Contact'
-    },
-    {
-        link: '#about',
-        text: 'About'
     },
 
 ]

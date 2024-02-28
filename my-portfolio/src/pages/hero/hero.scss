@@ -50,15 +50,17 @@
         height: 100%;
         position: absolute;
         top: 0;
-        right: 180px;
+        right: 0px;
 
         img {
+            object-fit: contain;
+            width: 900px;
             filter: drop-shadow(4px 0px 3px rgb(37, 42, 65));
         }
 
     }
 
-    .slidingTextContainer{
+    .slidingTextContainer {
         position: absolute;
         font-size: 40vh;
         bottom: -30px;
@@ -68,4 +70,3 @@
         font-weight: bold;
     }
 }
-

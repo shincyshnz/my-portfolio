@@ -93,7 +93,7 @@ const Hero = () => {
         >
           <motion.img
             variants={imgVariants}
-            width={"120%"} src="/hero2.png" alt="hero" />
+            src="/hero3.svg" alt="hero" />
         </motion.div>
 
       </div>

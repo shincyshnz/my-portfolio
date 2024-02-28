@@ -32,8 +32,9 @@
             position: absolute;
             inset: 0;
             margin: auto;
+            z-index: -1;
 
-            svg{
+            svg {
                 object-fit: contain;
                 width: 350px;
             }
@@ -64,5 +65,12 @@
             }
 
         }
+    }
+
+    .alertMsg {
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 10px;
+        text-align: center;
     }
 }

@@ -1,44 +1,72 @@
-import { useRef } from 'react'
-import './contact.scss'
-import { motion, useInView } from 'framer-motion'
+import { useRef, useState } from "react";
+import "./contact.scss";
+import { motion, useInView } from "framer-motion";
+import emailjs from "@emailjs/browser";
+
+const variants = {
+  initial: {
+    y: 500,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Contact = () => {
   const ref = useRef();
-  const isInView = useInView(ref, { margin: "-100px" })
+  const formRef = useRef();
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const variants = {
-    initial: {
-      y: 500,
-      opacity: 0,
-    },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        staggerChildren: 0.1,
-      }
-    }
-  }
+  const isInView = useInView(ref, { margin: "-100px" });
+
+  const sendEmail = (e) => {
+    setError(false);
+    setSuccess(false);
+    setLoading(true);
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_in7vy51",
+        "template_tu2d5gu",
+        formRef.current,
+        "ayAO31ZWvVfQPGehv"
+      )
+      .then(
+        (result) => {
+          setSuccess(true)
+        },
+        (error) => {
+          setError(true);
+        }
+      );
+    setLoading(false);
+  };
 
   return (
     <motion.div
       ref={ref}
-      id='contact'
-      className='contact'
+      className="contact"
       variants={variants}
       initial="initial"
       whileInView="animate"
     >
       <motion.div className="textContainer" variants={variants}>
-        <motion.h1 variants={variants}>Let's work together</motion.h1>
+        <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span><a href="mailto:">shincyshnz@gmail.com</a></span>
+          <span>shincyshnz@gmail.com</span>
         </motion.div>
       </motion.div>
-      <motion.div className="formContainer">
-        {/* SVG - Phone call */}
+      <div className="formContainer">
         <motion.div
           className="phoneSvg"
           initial={{ opacity: 1 }}
@@ -68,20 +96,26 @@ const Contact = () => {
             />
           </svg>
         </motion.div>
-
         <motion.form
+          ref={formRef}
+          onSubmit={sendEmail}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 4, duration: 3 }}
+          transition={{ delay: 4, duration: 1 }}
         >
-          <input type='text' placeholder='Name' required />
-          <input type='email' placeholder='Email' required />
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <button>Submit</button>
-        </motion.form>
-      </motion.div>
-    </motion.div>
-  )
-}
+          <input type="text" required placeholder="Name" name="name" />
+          <input type="email" required placeholder="Email" name="email" />
+          <textarea rows={8} placeholder="Message" name="message" />
+          <button>{loading ? "Loading" : "Submit"}</button>
 
-export default Contact
+          {(error || success) && <div className="alertMsg" style={{ color: error ? 'white' : 'green' }}>
+            {error && error.text}
+            {success && "Thank you for your response!"}
+          </div>}
+        </motion.form>
+      </div>
+    </motion.div>
+  );
+};
+
+export default Contact;

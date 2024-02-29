@@ -53,12 +53,12 @@ export const PROJECTS = [
     },
     {
         id: 2,
-        title: "TMDB Movie Catalogue App",
-        img: "/project1.png",
-        description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to handle movie data. Users can view movies list in TMDB-Mobvie App. Users can filter movies based on genres and rating.",
-        demo: "https://movie-cms-moies-app.onrender.com/",
+        title: "Task Ease",
+        img: "/p-task-ease.png",
+        description: "Simple task manager app to help users to stay organized for their day to day tasks. This app is developed using React and NodeJS with error handling. You can add,edit and delete any task. The task details are stored in MongoDb.",
+        demo: "https://taskease-client.onrender.com/",
         gitHub: "https://github.com/shincyshnz/movie-cms",
-        techStack: ["React", "MongoDb", "Express", "Tailwind CSS", "Multer", "Bcrypt", "JWT", "SSE", "Cloudinary"]
+        techStack: ["React","React Router", "Tanstack Query", "MongoDb", "Express"]
     },
     {
         id: 3,

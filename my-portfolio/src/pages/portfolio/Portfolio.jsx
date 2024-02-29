@@ -30,10 +30,10 @@ const Single = ({ item }) => {
                         </div>
 
                         <div className="links">
-                            <a target='_blank' href={item.demo}>
+                            <a target='blank' href={item.demo}>
                                 <img src='/external-link.svg' />
                             </a>
-                            <a target='_blank' href={item.gitHub}>
+                            <a target='blank' href={item.gitHub}>
                                 <img src='/github.svg' />
                             </a>
                         </div>

@@ -23,10 +23,6 @@ export const SIDEBAR_LINKS = [
         text: 'Homepage'
     },
     {
-        link: '#about',
-        text: 'About'
-    },
-    {
         link: '#experience',
         text: 'Experience'
     },

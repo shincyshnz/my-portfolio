@@ -1,5 +1,30 @@
 @import '../../app.scss';
 
+@mixin mobile-tablet-textContainer {
+    height: 60%;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding-inline: 10px;
+}
+
+;
+
+@mixin mobile-tablet-imageContainer {
+    height: 50%;
+    width: 100%;
+    top: unset;
+    bottom: 0px;
+}
+
+;
+
+@mixin full-width-height {
+    width: 100%;
+    height: 100%;
+}
+
 .hero {
     height: calc(100vh - 100px);
     overflow: hidden;
@@ -20,12 +45,11 @@
             gap: 40px;
 
             @include mobile {
-                height: 60%;
-                width: 100%;
-                gap: 20px;
-                align-items: center;
-                text-align: center;
-                padding-inline: 10px;
+                @include mobile-tablet-textContainer;
+            }
+
+            @include tablet {
+                @include mobile-tablet-textContainer;
             }
 
             h2 {
@@ -61,6 +85,10 @@
                         padding: 10px;
                         margin-bottom: 5px;
                     }
+
+                    @include tablet {
+                        padding: 20px;
+                    }
                 }
             }
 
@@ -81,10 +109,11 @@
         right: 0;
 
         @include mobile {
-            height: 50%;
-            width: 100%;
-            top: unset;
-            bottom: 0px;
+            @include mobile-tablet-imageContainer;
+        }
+
+        @include tablet {
+            @include mobile-tablet-imageContainer;
         }
 
         img {
@@ -93,8 +122,11 @@
             filter: drop-shadow(4px 0px 3px rgb(37, 42, 65));
 
             @include mobile {
-                width: 100%;
-                height: 100%;
+                @include full-width-height;
+            }
+
+            @include tablet {
+                @include full-width-height;
             }
         }
 

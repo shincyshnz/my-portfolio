@@ -1,5 +1,10 @@
 @import '../../app.scss';
 
+@mixin mobile-tablet-imageContainer {
+    width: 100%;
+    max-height: 300px;
+}
+
 .portfolio {
     position: relative;
 
@@ -18,7 +23,7 @@
         }
 
         @include tablet {
-            padding-top: calc(100vh - 200px);
+            padding-top: calc(100vh - 100px);
             font-size: 36px;
         }
 
@@ -65,13 +70,11 @@
                 border-radius: 20px;
 
                 @include mobile {
-                    width: 100%;
-                    max-height: 300px;
+                    @include mobile-tablet-imageContainer;
                 }
 
                 @include tablet {
-                    width: 100%;
-                    max-height: 600px;
+                    @include mobile-tablet-imageContainer;
                 }
 
                 img {
@@ -106,9 +109,10 @@
 
                 @include tablet {
                     transform: none !important;
-                    gap: 30px;
+                    gap: 20px;
                     text-align: center;
                     align-items: center;
+                    padding: 10px;
                 }
 
                 h2 {
@@ -124,7 +128,13 @@
                     font-size: 16px;
 
                     @include mobile {
-                        font-size: 12px;
+                        font-size: 14px;
+                        text-align: justify;
+                    }
+
+
+                    @include tablet {
+                        font-size: 14px;
                         text-align: justify;
                     }
                 }
@@ -149,7 +159,21 @@
                             }
                         }
                     }
+                }
 
+                .tech {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+
+                    .items {
+                        padding: 10px;
+                        font-size: 12px;
+                        border: 1px solid white;
+                        border-radius: 25px;
+                        // background-color: rgb(136, 136, 136);
+                        color: rgb(254, 254, 254);
+                    }
                 }
             }
         }

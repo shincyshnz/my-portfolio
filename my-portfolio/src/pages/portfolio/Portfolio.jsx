@@ -22,6 +22,13 @@ const Single = ({ item }) => {
                     <motion.div className="textContainer" style={{ y }}>
                         <h2>{item.title}</h2>
                         <p>{item.description}</p>
+
+                        <div className="tech">
+                            {item.techStack.map((tech, i) => (
+                                <div key={i} className="items">{tech}</div>
+                            ))}
+                        </div>
+
                         <div className="links">
                             <a target='_blank' href={item.demo}>
                                 <img src='/external-link.svg' />

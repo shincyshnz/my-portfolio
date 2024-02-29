@@ -47,23 +47,26 @@ export const PROJECTS = [
         title: "TMDB Movie Catalogue App",
         img: "/project1.png",
         description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to handle movie data. Users can view movies list in TMDB-Mobvie App. Users can filter movies based on genres and rating.",
-        demo : "https://movie-cms-moies-app.onrender.com/",
-        gitHub : "https://github.com/shincyshnz/movie-cms" 
+        demo: "https://movie-cms-moies-app.onrender.com/",
+        gitHub: "https://github.com/shincyshnz/movie-cms",
+        techStack: ["React", "MongoDb", "Express", "Tailwind CSS", "Multer", "Bcrypt", "JWT", "SSE", "Cloudinary"]
     },
     {
         id: 2,
         title: "TMDB Movie Catalogue App",
         img: "/project1.png",
         description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to handle movie data. Users can view movies list in TMDB-Mobvie App. Users can filter movies based on genres and rating.",
-        demo : "https://movie-cms-moies-app.onrender.com/",
-        gitHub : "https://github.com/shincyshnz/movie-cms" 
+        demo: "https://movie-cms-moies-app.onrender.com/",
+        gitHub: "https://github.com/shincyshnz/movie-cms",
+        techStack: ["React", "MongoDb", "Express", "Tailwind CSS", "Multer", "Bcrypt", "JWT", "SSE", "Cloudinary"]
     },
     {
         id: 3,
         title: "TMDB Movie Catalogue App",
         img: "/project1.png",
         description: "TMDB - Movie catalogue app is a web app built using React, Express and MongoDB. The TMDB-Admin Panel helps Admin to handle movie data. Users can view movies list in TMDB-Mobvie App. Users can filter movies based on genres and rating.",
-        demo : "https://movie-cms-moies-app.onrender.com/",
-        gitHub : "https://github.com/shincyshnz/movie-cms" 
+        demo: "https://movie-cms-moies-app.onrender.com/",
+        gitHub: "https://github.com/shincyshnz/movie-cms",
+        techStack: ["React", "MongoDb", "Express", "Tailwind CSS", "Multer", "Bcrypt", "JWT", "SSE", "Cloudinary"]
     },
 ]

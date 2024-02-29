@@ -1,10 +1,13 @@
 import Navbar from './components/navbar/Navbar'
 import { Contact, Education, Hero, Parallax, Portfolio } from "./pages";
 import "./app.scss"
+import Cursor from './components/cursor/Cursor';
 
 const App = () => {
   return (
     <div>
+      <Cursor />
+
       <section id='homepage'>
         <Navbar />
         <Hero />
@@ -22,9 +25,10 @@ const App = () => {
       </section>
 
       <Portfolio />
-      <section>
+      <section id='contact'>
         <Contact />
       </section>
+
     </div >
 
   )

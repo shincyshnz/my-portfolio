@@ -2,7 +2,7 @@ import { motion, useAnimate } from 'framer-motion'
 import { SIDEBAR_LINKS } from "../../../constants"
 import { useEffect, useState } from 'react'
 
-const Links = () => {
+const Links = ({setOpen}) => {
   const [selected, setSelected] = useState('');
 
   const variants = {
@@ -32,6 +32,7 @@ const Links = () => {
 
   const handleClick = (e) => {
     setSelected(prev => e.target.classList.value);
+    setOpen(false);
   }
 
   return (

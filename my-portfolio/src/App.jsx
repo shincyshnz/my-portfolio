@@ -23,12 +23,12 @@ const App = () => {
       <section>
         <Education />
       </section>
-
-      {/* <Portfolio /> */}
       
-      {/* <section id='contact'>
+      <Portfolio />
+      
+      <section id='contact'>
         <Contact />
-      </section> */}
+      </section>
 
     </div >
 

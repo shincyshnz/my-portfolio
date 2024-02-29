@@ -10,7 +10,7 @@ const App = () => {
 
       <section id='homepage'>
         <Navbar />
-        {/* <Hero /> */}
+        <Hero />
       </section>
 
       {/* <section id='experience'>

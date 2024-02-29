@@ -17,6 +17,10 @@
         width: 400px;
         background-color: white;
 
+        @include mobile{
+            width: 50%;
+        }
+
         .links {
             position: absolute;
             width: 100%;
@@ -29,7 +33,12 @@
         }
 
         a{
-            font-size: 30px;
+            font-size: 40px;
+            text-align: center;
+
+            @include mobile{
+                font-size: 20px;
+            }
         }
     }
 

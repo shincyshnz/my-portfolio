@@ -1,6 +1,5 @@
 import './education.scss'
-import { useRef, useEffect, useState } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 
 const Education = () => {
@@ -17,7 +16,7 @@ const Education = () => {
 
   const contentAnimation = {
     initial: {
-      y: -500,
+      y: -100,
       opacity: 0
     },
     animate: {
@@ -37,7 +36,7 @@ const Education = () => {
 
   return (
     <div className="timelineContainer">
-
+      {/* Text Container */}
       <motion.div
         variants={lineAnimation}
         initial="initial"
@@ -52,20 +51,19 @@ const Education = () => {
             initial="initial"
             whileInView="animate"
             whileHover={hoverEffect}
-            style={{}}
           >
             <motion.h2
               variants={contentAnimation}
-            >M.Tech in Computer Science & Engg
+            >M.Tech
             </motion.h2>
             <motion.h5
               variants={contentAnimation}
-            >2018 - 2020
+            >Computer Science & Engineering
             </motion.h5>
-            <motion.p
+            <motion.h5
               variants={contentAnimation}
             >APJ Abdul Kalam Technological University
-            </motion.p>
+            </motion.h5>
 
             {/* <!-- SVG for left container --> */}
             <motion.svg id="progress" width="100" height="100" viewBox="0 0 100 100">
@@ -86,6 +84,7 @@ const Education = () => {
 
           </motion.div>
         </div>
+
         <div className="container right">
           <motion.div
             variants={contentAnimation}
@@ -96,16 +95,16 @@ const Education = () => {
           >
             <motion.h2
               variants={contentAnimation}
-            >B.Tech in Computer Science & Engg
+            >B.Tech
             </motion.h2>
             <motion.h5
               variants={contentAnimation}
-            >2018 - 2020
+            > Computer Science & Engineering
             </motion.h5>
-            <motion.p
+            <motion.h5
               variants={contentAnimation}
             >Calicut University
-            </motion.p>
+            </motion.h5>
 
             {/* <!-- SVG for right container --> */}
             <svg id="progress" width="100" height="100" viewBox="0 0 100 100">

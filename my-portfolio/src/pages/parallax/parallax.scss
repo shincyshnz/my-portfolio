@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 @mixin imageStyles($imgUrl) {
     background-image: url($imgUrl);
     background-size: cover;
@@ -18,16 +20,31 @@
 
     h1 {
         font-size: 100px;
+
+        @include mobile{
+            font-size: 42px;
+            text-align: center;
+        }
     }
 
     .mountains {
         @include imageStyles('/mountains.png');
         z-index: 3;
+
+        @include mobile{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 
     .planets {
         @include imageStyles('/planets.png');
         z-index: 2;
+
+        @include mobile{
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 
     .stars {

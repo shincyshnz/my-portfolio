@@ -13,16 +13,16 @@ const App = () => {
         <Hero />
       </section>
 
-      {/* <section id='experience'>
+      <section id='experience'>
         <Parallax type="experience" />
-      </section> */}
+      </section>
 
-      {/* <section id='education'>
+      <section id='education'>
         <Parallax type="education" />
       </section>
       <section>
         <Education />
-      </section> */}
+      </section>
 
       {/* <Portfolio /> */}
       

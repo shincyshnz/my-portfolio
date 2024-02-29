@@ -1,5 +1,10 @@
 @import "../../app.scss";
 
+@mixin mobile-tablet-styles {
+    justify-content: flex-end;
+    padding: 20px;
+}
+
 .navbar {
     height: 100px;
 
@@ -12,8 +17,11 @@
         height: 100%;
 
         @include mobile {
-            justify-content: flex-end;
-            padding: 20px;
+            @include mobile-tablet-styles;
+        }
+
+        @include tablet {
+            @include mobile-tablet-styles;
         }
 
         span {
@@ -21,6 +29,10 @@
             margin-left: 50px;
 
             @include mobile {
+                display: none;
+            }
+
+            @include tablet{
                 display: none;
             }
         }

@@ -31,7 +31,7 @@ const Experience = () => {
     }
 
     const hoverEffect = {
-        backgroundColor: "white",
+        backgroundColor: "rgb(255, 255, 255)",
         color: "#000000",
     }
 

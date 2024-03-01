@@ -12,6 +12,7 @@
         position: relative;
         max-width: $desktop-width;
         width: 100%;
+        margin: 0 auto;
 
         @include mobile {
             margin-top: 70px;
@@ -21,9 +22,9 @@
             content: '';
             position: absolute;
             width: 6px;
-            height: 100vh;
+            // height: 380px;
             border-radius: 10px;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
             top: 0;
             bottom: 0;
             left: 50%;
@@ -39,25 +40,22 @@
         }
 
         .container {
-            // padding: 10px 40px;
+            padding: 10px 40px;
             position: relative;
             background-color: inherit;
             width: 50%;
 
             @include mobile {
                 width: 100%;
-                height: max-content;
                 padding-left: 70px;
                 padding-right: 25px;
             }
 
             .content {
-                top: -110px;
                 padding: 20px 30px;
                 background-color: rgba(68, 63, 144, 0.441);
                 position: relative;
                 border-radius: 6px;
-
 
                 h2 {
                     color: #f9710a;
@@ -90,19 +88,19 @@
 
         .left {
             left: 0;
+            // margin-top: 120px;
 
             &:before {
                 content: " ";
                 height: 0;
                 position: absolute;
-                // top: 22px;
-                top: -90px;
+                top: 22px;
                 width: 0;
                 z-index: 1;
                 right: 30px;
-                border: medium solid white;
+                border: medium solid rgb(255, 255, 255);
                 border-width: 10px 0 10px 10px;
-                border-color: transparent transparent transparent white;
+                border-color: transparent transparent transparent rgb(255, 255, 255);
 
                 @include mobile {
                     left: 60px;
@@ -113,7 +111,7 @@
 
             svg {
                 right: -52px;
-                top: 7px;
+                top: 15px;
 
                 @include mobile {
                     right: unset;
@@ -125,24 +123,24 @@
 
         .right {
             left: 50%;
-            top: 11%;
+            // top: 10%;
 
             @include mobile {
                 left: unset;
+                // top: unset;
             }
 
             &:before {
                 content: " ";
                 height: 0;
                 position: absolute;
-                // top: 22px;
-                top: -80px;
+                top: 22px;
                 width: 0;
                 z-index: 1;
                 left: 30px;
-                border: medium solid white;
+                border: medium solid rgb(255, 255, 255);
                 border-width: 10px 10px 10px 0;
-                border-color: transparent white transparent transparent;
+                border-color: transparent rgb(255, 255, 255) transparent transparent;
 
                 @include mobile {
                     rotate: 360deg;
@@ -161,6 +159,7 @@
 
             svg {
                 left: -53px;
+                top: 15px;
             }
 
         }

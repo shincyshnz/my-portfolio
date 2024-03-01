@@ -14,7 +14,7 @@
         left: 0;
         padding-top: 50px;
         text-align: center;
-        color: orange;
+        color: rgb(255, 165, 0);
         font-size: 36px;
 
         @include mobile {
@@ -29,7 +29,7 @@
 
         .progressBar {
             height: 10px;
-            background-color: white;
+            background-color: rgb(255, 255, 255);
         }
     }
 
@@ -173,7 +173,7 @@
                     .items {
                         padding: 10px;
                         font-size: 12px;
-                        border: 1px solid white;
+                        border: 1px solid rgb(255, 255, 255);
                         border-radius: 25px;
                         // background-color: rgb(136, 136, 136);
                         color: rgb(254, 254, 254);

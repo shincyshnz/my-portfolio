@@ -109,7 +109,7 @@ const Contact = () => {
           <textarea rows={8} placeholder="Message" name="message" />
           <button>{loading ? "Loading" : "Submit"}</button>
 
-          {(error || success) && <div className="alertMsg" style={{ color: error ? 'white' : 'green' }}>
+          {(error || success) && <div className="alertMsg" style={{ color: error ? 'rgb(255, 255, 255)' : 'green' }}>
             {error && error.text}
             {success && "Thank you for your response!"}
           </div>}

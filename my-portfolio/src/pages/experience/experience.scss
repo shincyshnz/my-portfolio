@@ -46,6 +46,7 @@
 
             @include mobile {
                 width: 100%;
+                height: max-content;
                 padding-left: 70px;
                 padding-right: 25px;
             }
@@ -124,11 +125,10 @@
 
         .right {
             left: 50%;
-            top: 10%;
+            top: 11%;
 
             @include mobile {
                 left: unset;
-                top: unset;
             }
 
             &:before {

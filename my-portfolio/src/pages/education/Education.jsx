@@ -31,7 +31,7 @@ const Education = () => {
 
   const hoverEffect = {
     backgroundColor: "white",
-    color: "black",
+    color: "#000000",
   }
 
   return (

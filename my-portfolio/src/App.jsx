@@ -1,5 +1,5 @@
 import Navbar from './components/navbar/Navbar'
-import { Contact, Education, Hero, Parallax, Portfolio } from "./pages";
+import { Contact, Education, Experience, Hero, Parallax, Portfolio } from "./pages";
 import "./app.scss"
 import Cursor from './components/cursor/Cursor';
 
@@ -15,6 +15,10 @@ const App = () => {
 
       <section id='experience'>
         <Parallax type="experience" />
+      </section>
+
+      <section>
+        <Experience />
       </section>
 
       <section id='education'>

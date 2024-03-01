@@ -16,7 +16,6 @@ export const SOCIAL_LINKS = [
     }
 ]
 
-
 export const SIDEBAR_LINKS = [
     {
         link: '#homepage',
@@ -58,7 +57,7 @@ export const PROJECTS = [
         description: "Simple task manager app to help users to stay organized for their day to day tasks. This app is developed using React and NodeJS with error handling. You can add,edit and delete any task. The task details are stored in MongoDb.",
         demo: "https://taskease-client.onrender.com/",
         gitHub: "https://github.com/shincyshnz/movie-cms",
-        techStack: ["React","React Router", "Tanstack Query", "MongoDb", "Express"]
+        techStack: ["React", "React Router", "Tanstack Query", "MongoDb", "Express"]
     },
     {
         id: 3,
@@ -80,7 +79,7 @@ export const PROJECTS = [
     },
 
     {
-        id: 4,
+        id: 5,
         title: "Forkify",
         img: "/p-forkify.png",
         description: "This is Recipe- App created as part of the Udemy course, where you can view, bookmark and add recipes.",
@@ -88,4 +87,23 @@ export const PROJECTS = [
         gitHub: "https://github.com/shincyshnz/Forkify",
         techStack: ["HTML", "CSS", "Javascript", "Parcel"]
     },
+]
+
+export const EXPERIENCE = [
+
+    {
+        jobTitle: "Front End Developer",
+        company: "Lifisian Technologies",
+        year: "2023 - 2024",
+    },
+    {
+        jobTitle: "Full Stack Developer",
+        company: "Datachords Infoware",
+        year: "2021 - 2022",
+    },
+    {
+        jobTitle: "Web Developer",
+        company: "Aaamshe Technologies LLP",
+        year: "2016 - 2018",
+    }
 ]

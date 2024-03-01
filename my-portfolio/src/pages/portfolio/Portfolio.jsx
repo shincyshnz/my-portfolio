@@ -30,9 +30,9 @@ const Single = ({ item }) => {
                         </div>
 
                         <div className="links">
-                            <a target='blank' href={item.demo}>
+                            {item?.demo && <a target='blank' href={item?.demo}>
                                 <img src='/external-link.svg' />
-                            </a>
+                            </a>}
                             <a target='blank' href={item.gitHub}>
                                 <img src='/github.svg' />
                             </a>

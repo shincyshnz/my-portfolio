@@ -77,7 +77,6 @@ export const PROJECTS = [
         gitHub: "https://github.com/shincyshnz/MoviesCloneApp",
         techStack: ["React", "React Router", "Vite", "TMDB API"]
     },
-
     {
         id: 5,
         title: "Forkify",
@@ -86,6 +85,15 @@ export const PROJECTS = [
         demo: "https://forkify-shincy.netlify.app/",
         gitHub: "https://github.com/shincyshnz/Forkify",
         techStack: ["HTML", "CSS", "Javascript", "Parcel"]
+    },
+    {
+        id: 6,
+        title: "My Portfolio",
+        img: "/p-portfolio.png",
+        description: "This a portfolio website used to show case your works and skills, created using React and Framer motion.",
+        demo: "https://shincy-portfolio.netlify.app/",
+        gitHub: "https://github.com/shincyshnz/my-portfolio/tree/main/my-portfolio",
+        techStack: ["React", "SCSS", "Framer motion", "Vite"]
     },
 ]
 

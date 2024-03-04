@@ -25,6 +25,7 @@ body{
 section{
     height: 100vh;
     scroll-snap-align: center;
+    padding-inline: 10px;
 }
 
 
@@ -37,13 +38,13 @@ section{
 }
 
 @mixin tablet {
-    @media(min-width:739px) and (max-width: 1024px){
+    @media(min-width:739px) and (max-width: 1023px){
         @content;
     }
 }
 
 @mixin desktop {
-    @media(max-width: 1366px){
+    @media(min-width: 1024px){
         @content;
     }
 }

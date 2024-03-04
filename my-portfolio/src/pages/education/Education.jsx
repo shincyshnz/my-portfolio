@@ -393,8 +393,6 @@ const Education = () => {
         </svg>
       </div>
 
-      
-
       <div className="textContainer">
         <motion.div
           variants={contentAnimation}

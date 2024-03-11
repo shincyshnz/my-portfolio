@@ -101,7 +101,7 @@ export const EXPERIENCE = [
 
     {
         jobTitle: "Front End Developer",
-        company: "Lifisian Technologies",
+        company: "Lifisin Technologies",
         year: "2023 - 2024",
     },
     {

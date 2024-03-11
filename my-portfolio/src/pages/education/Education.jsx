@@ -428,7 +428,7 @@ const Education = () => {
           >
             <motion.h2
               variants={contentAnimation}
-            >M.Tech
+            >B.Tech
             </motion.h2>
             <motion.h5
               variants={contentAnimation}
@@ -436,7 +436,7 @@ const Education = () => {
             </motion.h5>
             <motion.h5
               variants={contentAnimation}
-            >APJ Abdul Kalam Technological University
+            >Calicut University
             </motion.h5>
           </motion.div>
         </Tilt>
